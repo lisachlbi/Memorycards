@@ -1,0 +1,518 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 15px;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    overflow: hidden;
+}
+
+.form {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign {
+    position: absolute;
+    width: 500px;
+    background: #7C42B6;
+    box-shadow: 7px 7px 0px #83838378;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.input-element {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.input-element input {
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+    width: 200px;
+}
+
+.input-element .error {
+    width: 40%;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    color: white;
+}
+
+.error {
+    color: white;
+}
+
+
+.submit {
+    text-align: center;
+}
+
+.submit .btn-sign {
+    margin-top: 20px;
+    color: #7C42B6;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 40px;
+}
+
+.submit a {
+    display: block;
+    color: #c5a5d9;
+    margin-top: 50px;
+    line-height: 1;
+}
+
+.navigation {
+    background-color: #7C42B6;
+    height: 100vh;
+    width: 20%;
+    display: inline-block;
+}
+
+.nav-links {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 20px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+main {
+    display: inline-block;
+    width: 80%;
+    height: 100vh;
+    top: 10%;
+    position: absolute;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+section {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+.affichage {
+    width: 60%;
+    height: 60%;
+    background: rgba(241, 241, 241, 1);
+    border-radius: 20px;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.show-affichage {
+    width: 90%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(241, 241, 241, 1);
+    border-radius: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.show-revision {
+    border-radius: 10px;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+
+.show-categorie {
+    height: 50px;
+    width: 300px;
+    border-radius: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#plus {
+    width: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #7C42B6;
+    cursor: pointer;
+    display: block;
+}
+
+.affichage-popup {
+    width: 60%;
+    height: 60%;
+    background: rgba(241, 241, 241, 1);
+    border-radius: 20px;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.show-popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: none;
+    top: 0;
+    left: 0;
+}
+
+
+.form-categorie input {
+    margin-top: 30px;
+    height: 30px;
+    width: 200px;
+}
+
+#modifier {
+    font-size: 30px;
+    margin-left: 5px;
+    color: #7C42B6;
+    cursor: pointer;
+}
+
+#nom-categorie {
+    border-radius: 10px;
+    border: none;
+}
+
+.ajouter input {
+    color: white;
+    background-color: #7C42B6;
+    border: none;
+}
+
+
+.affichage .choose {
+    text-align: center;
+}
+
+
+.show-grid {
+    border-radius: 10px;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.show-grid .show-outils {
+    display: flex;
+    justify-content: space-around;
+}
+
+.edit,
+.supp {
+    color: #7C42B6;
+    cursor: pointer;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+#gridColumns {
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+#gridColumns input {
+    border-radius: 10px;
+    border: none;
+    width: 200px;
+    height: 30px;
+    margin-top: 30px;
+}
+
+#gridColumns select {
+    margin-top: 30px;
+}
+
+#ajouter {
+    border-radius: 10px;
+}
+
+#description {
+    height: auto;
+}
+
+.play {
+    height: 30px;
+    width: 200px;
+    border: none;
+    background-color: #7C42B6;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-play {
+    display: flex;
+    justify-content: center;
+}
+
+.ajoutImg {
+    width: 200px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ajoutImg label {
+    color: #7C42B6;
+}
+
+.ajoutImg #imgRecto {
+    margin-top: 10px;
+    font-family: inherit;
+    font-size: 13px;
+}
+
+.ajoutImg #imgVerso {
+    margin-top: 10px;
+    font-family: inherit;
+    font-size: 13px;
+}
+
+.containerImg {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+h2 {
+    color: rgb(63, 63, 63);
+    font-size: 18px;
+}
+
+h3 {
+    margin-top: 5px;
+    color: rgb(169, 168, 168);
+}
+
+.titre-grid {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.play a {
+    color: white;
+}
+
+#h2Play {
+    color: white;
+}
+
+
+#play {
+    font-size: 30px;
+    margin-left: 5px;
+    color: #7C42B6;
+    cursor: pointer;
+}
+
+#nbr-carte {
+    border-radius: 10px;
+    border: none;
+}
+
+.input-icon {
+    display: flex;
+    align-items: flex-end;
+}
+
+.play-carte {
+    width: 350px;
+    height: 350px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.show-carte {
+    width: 90%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.centered-carte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.play-carte {
+    width: 350px;
+    height: 350px;
+    perspective: 1000px;
+}
+
+.flip-carte {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+
+.flip-carte.flipped {
+    transform: rotateY(-180deg);
+}
+
+.dos-carte {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 3px 13px 3px rgba(96, 96, 96, 0.2);
+}
+
+.dos-carte.carte-recto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dos-carte.carte-verso {
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-carte {
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+}
+
+.style-titre {
+    position: absolute;
+    text-align: center;
+
+}
+
+.style-titre h2 {
+    padding: 40px 80px;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+#date-creation {
+    color: #7C42B6;
+}
+
+#body-index {
+    background-color: #7C42B6;
+}
+
+.index {
+    width: 100vw;
+    height: 100vh;
+}
+
+.show-index {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.show-index h1{
+    color: white;
+    font-size: 70px;
+}
+
+.index-links {
+    display: flex;
+}
+
+.index-links a {
+    color: white;
+    font-size: 25px;
+    margin: 25px;
+}
